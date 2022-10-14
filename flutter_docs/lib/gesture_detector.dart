@@ -40,9 +40,9 @@ class _SampleAppState extends State<SampleApp>
               var imgSize = imageSize;
 
               if (offset.direction > 0) {
-                imgSize = 800;
+                imgSize = 1000;
               } else {
-                imgSize = 80;
+                imgSize = 100;
               }
               setState(() {
                 imageSize = imgSize;

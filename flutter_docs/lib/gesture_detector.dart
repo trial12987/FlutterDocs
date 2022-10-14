@@ -25,7 +25,7 @@ class _SampleAppState extends State<SampleApp>
     );
     curve = CurvedAnimation(
       parent: controller,
-      curve: Curves.easeIn,
+      curve: Curves.slowMiddle,
     );
   }
 
@@ -40,9 +40,9 @@ class _SampleAppState extends State<SampleApp>
               var imgSize = imageSize;
 
               if (offset.direction > 0) {
-                if (imgSize < 400) imgSize = imgSize + 20;
+                imgSize = 800;
               } else {
-                if (imgSize > 40) imgSize = imgSize - 20;
+                imgSize = 80;
               }
               setState(() {
                 imageSize = imgSize;
